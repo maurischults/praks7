@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+@keyframes fromto {
+  from {
+    color: rgb(88, 70, 72);
+  }
+  to {
+    color: rgb(252, 252, 252);
+    margin-top: 0;
+  }
+}
+@keyframes fromto2 {
+  from {
+    color: rgb(88, 70, 72);
+  }
+  to {
+    color: rgb(252, 252, 252);
+    margin-left: 0px;
+  }
+}
+/*---ESILEHT---*/
+.header {
+  display: flex;
+  background-image: linear-gradient(
+      112.69deg,
+      #000000 7%,
+      rgba(100, 100, 100, 0.6) 55%,
+      #000000 98%
+    ),
+    url("header.png");
+  width: 100%;
+  height: 100vh;
+}
+.header-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  margin-top: 70px;
+}
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1mm;
+  margin-top: 0px;
+  margin-bottom: 120px;
+  animation-name: fromto;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  margin-top: -150px;
+}
+#esilehe_tekst {
+  justify-content: start;
+  font-size: 105px;
+  font-weight: normal;
+  color: white;
+  animation-name: fromto2;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  margin-left: -500px;
+}
+#navigatsioon {
+  display: inline-flex;
+  width: 85%;
+  flex-direction: row-reverse;
+}
+#navigatsioon a {
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  height: 0;
+  margin-left: 60px;
+  transition: font-size 2s;
+}
+#navigatsioon a:hover {
+  font-size: 30px;
+}
+/*---PÕHISISU---*/
+.main-content section {
+  display: flex;
+  width: 1060px;
+  justify-content: center;
+  margin: auto;
+}
+.main-content section h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  width: 100vw;
+  color: #5b1474;
+  font-weight: bold;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-right: 0;
+  transition: font-size 2s, font-weight 4s;
+}
+.main-content section h2:hover {
+  font-size: 70px;
+  font-weight: lighter;
+}
+/*---WELCOME---*/
+.welcome-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.welcome-content img {
+  border-radius: 2px;
+}
+.welcome-content p {
+  max-width: 460px;
+  margin-left: 80px;
+  font-size: 20px;
+}
+#welcome-tekst {
+  font-size: 20px;
+  line-height: 30px;
+}
+/*---EI TÖÖTA SEE ASI NII NAGU PEAKS, PROOVISIN IGAT MOODI AGA LIHTSALT EI MUUDA ESIMEST TÄHTE ÄRA!! *insert suicide emoji here*---*/
+p#welcome-tekst::first-letter {
+  font-size: 70px !important;
+  color: #8c1ab6 !important;
+}
+/*---PRICING---*/
+/*---DISPLAY FLEX ERALDI NENDES RIKKUS ILUSA KÕIK ÄRA NING EI SAA NEID NAV KASTIKESI SAMALE TASANDILE, SAMUTI TEGIN DEBIILSET MOODI NENDE KASTIDE VAHED KUNA EI TOIMIND ASJAD ÕIGET MOODI---*/
+.pricing-content {
+  display: flex;
+  width: 100vw;
+}
+.pricing-card {
+  text-align: center;
+  width: 300px;
+  margin-left: 80px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.267);
+  border-radius: 2px;
+}
+.pricing-card1 {
+  text-align: center;
+  width: 300px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.267);
+  border-radius: 2px;
+}
+.pricing-card1 div {
+  margin-top: 15px;
+}
+.pricing-card div {
+  margin-top: 15px;
+}
+/*---EI TAHTNUD NEILD SEE ALT KRIIPS (DEKORATSIOON) ÄRA TULLA---*/
+.pricing-card nav {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 4px #5b1474;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+.pricing-card1 nav {
+  font-weight: bold;
+  margin-top: 40px;
+  box-shadow: 0px 1px 4px #5b1474;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+}
+/*---EITEA KUIDAS TERVE KASTI PÕLEMA SAAB, SILME EEST KIRJU JUBA SELLEST GOOGELDAMISEST JA TÄNA POLE GOOGLE SUUREKS ABIKS OLNUD, MISKI POLE TÖÖTAND NII KUIS PEAKS---*/
+.pricing-content div nav a:hover {
+  color: blueviolet;
+}
+/*---TESTIMONIALS---*/
+.testimonials-content p {
+  box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.267);
+  margin-bottom: 80px;
+  font-size: 20px;
+  border-radius: 2px;
+}
+.tekst1,
+.tekst2 {
+  padding: 15px;
+}
+.italic {
+  display: flex;
+  font-style: italic;
+  justify-content: flex-end;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
